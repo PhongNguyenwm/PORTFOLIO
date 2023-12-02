@@ -1,0 +1,125 @@
+/* WORLD */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+header .navbar-brand {
+  font-size: 2rem;
+}
+header .container i {
+  color: #35a22c;
+}
+
+#portfolioNav .nav-link {
+  font-size: 1rem;
+  padding: 0 0.833rem;
+  color: white;
+  transition: 0.5s;
+}
+
+#portfolioNav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #35a22c;
+  transition: all 0.5s;
+}
+#portfolioNav .nav-item:hover .nav-link::after {
+  width: 100%;
+}
+#portfolioNav .nav-item:hover .nav-link {
+  color: #35a22c;
+}
+
+#portfolioNav .active .nav-link::after {
+  width: 100%;
+}
+#portfolioNav .active .nav-link {
+  color: #35a22c;
+}
+
+@media screen and (max-width: 992px) {
+  header .navbar .navbar-toggler {
+    background: #35a22c;
+  }
+  #portfolioNav {
+    background: white;
+  }
+  #portfolioNav .nav-link {
+    color: #35a22c;
+  }
+  #portfolioNav .nav-item:hover {
+    background: #35a22c;
+  }
+  #portfolioNav .nav-link::after {
+    display: none;
+  }
+  #portfolioNav .nav-item:hover .nav-link {
+    color: white;
+  }
+}
+
+/* CAROUSEL-PORT */
+#carouselPortMain .carousel-item > img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+#carouselPortMain .carousel-caption img {
+  width: 140px;
+  border-radius: 50%;
+}
+
+#carouselPortMain .carousel-indicators {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+#carouselPortMain .carousel-caption {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* PROJECT */
+.projects {
+  padding: 100px 0;
+}
+
+/* AWARDS */
+.awards {
+  padding: 70px 0;
+  background-image: url(../img/memphis_3.png);
+  background-size: 50%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.arwards__left {
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+}
